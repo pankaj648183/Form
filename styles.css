@@ -1,0 +1,73 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('111.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.container1 {
+    
+    width: auto;
+    height: 150vh;
+    align-content: space-around;
+    align-content: center;
+    text-align: top;
+    margin-top: 0%;
+    padding-top: 0%;
+
+}
+
+.container {
+    max-width: 600px; /* Center the form and limit its width */
+    color: black;
+}
+
+.card {
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-decoration-style: bold;
+    size: 200px ;
+
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+/* Password strength indicator */
+#strength {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #6c757d; /* Gray text */
+}
+.btn {
+    width: 100px;
+    height: 40px;
+    text-decoration-style: bold;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Adjust width for smaller screens */
+    }
+}

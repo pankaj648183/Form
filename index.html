@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+
+</head>
+<body>
+    
+    <div class="container1"> 
+       <center><h1><b>Registration Form</h1></b></center>
+       <img src="admin1.png" class="rounded mx-auto d-block" alt="admin" width="150"; height="120";>
+    <div class="container mt-5">
+       
+        <form id="registrationForm" onsubmit="validateForm(event)">
+            <div class="form-group">
+                <b><label for="fullName">Full Name:</label></b>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+                <span id="fullNameError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <b><label for="email">Email ID:</label></b>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <span id="emailError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <b><label for="phoneNumber">Phone Number:</label></b>
+                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required>
+                <span id="phoneNumberError" class="error"></span>
+            </div>
+            <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Password Strength Checker</title>
+                <link rel="stylesheet" href="styles.css">
+            </head>
+                
+            <div class="form-group">
+                <b><label for="password">Password:</label></b>
+                <input type="password" class="form-control" id="password" oninput="checkpasswordstrength()" name="password" required>
+                <span id="passwordError" class="error"></span>
+                <p id="strength"></p>
+            </div>
+
+            <div class="form-group">
+                <b><label for="ConfirmPassword">Confirm Password:</label></b>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                <span id="confirmPasswordError" class="error"></span>
+            </div>
+
+            <div class="register">
+           <center><button type="submit" class="btn btn-primary"><b>Register</b></button></center>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
